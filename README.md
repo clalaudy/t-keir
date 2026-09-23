@@ -15,8 +15,6 @@ templates) under the platform governor.
 
 Full documentation: [ThalesGroup.github.io/t-keir](https://thalesgroup.github.io/t-keir)
 
-<<<<<<< Updated upstream
-=======
 
 ### Quick installation for beginners
 
@@ -42,6 +40,16 @@ See section [Python versions](#Python versions) for more details on other
 supported versions of Python.
 
 
+#### Use system certificates
+
+By default, uv uses bundled Mozilla root certificates.
+If you need to use your own system certificates, open or create a uv.toml file under ~/.config/uv/ and add the following line :
+
+```bash
+#Linux
+system-certs = true
+````
+
 #### Install and deploy T-Keir documentation
 ```bash
 #Linux`
@@ -64,7 +72,6 @@ You can now go to the [Quick start](#Quick start) section in order to run
 your first T-Keir pipeline.
 
 
->>>>>>> Stashed changes
 ### Python versions
 
 | Version | Status |
