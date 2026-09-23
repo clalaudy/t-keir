@@ -15,6 +15,56 @@ templates) under the platform governor.
 
 Full documentation: [ThalesGroup.github.io/t-keir](https://thalesgroup.github.io/t-keir)
 
+<<<<<<< Updated upstream
+=======
+
+### Quick installation for beginners
+
+#### Check if uv is install on your computer.
+Type the following command in your terminal:
+```bash
+#Linux
+uv --version
+```
+
+If uv is not installed, you will see a command not found error message.
+Then, install uv following the documentation at the following link:
+[uv installation](https://docs.astral.sh/uv/getting-started/installation/)
+
+#### Install python 3.11
+
+```bash
+# Linux
+uv python install 3.11 --system-certs
+```
+
+See section [Python versions](#Python versions) for more details on other
+supported versions of Python.
+
+
+#### Install and deploy T-Keir documentation
+```bash
+#Linux`
+make docs
+````
+
+Open your browser and go at localhost:8000/ThalesGroup/t-keir/
+to browse the documantation.
+
+The "zero to hero" chapter will guide you through a didactic path to install t-keir, develop t-keir pipelines and deploy them.
+
+
+#### Install T-Keir
+```bash
+#Linux`
+make install
+````
+
+You can now go to the [Quick start](#Quick start) section in order to run
+your first T-Keir pipeline.
+
+
+>>>>>>> Stashed changes
 ### Python versions
 
 | Version | Status |
