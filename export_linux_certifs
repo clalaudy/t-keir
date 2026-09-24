@@ -1,0 +1,16 @@
+
+# Enterprise TLS for uv + BEIR (Linux system CA → PEM).
+# Usage: source export_certif_linux.source
+
+# Bundle CA système
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+
+# uv / OpenSSL / httpx
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
+# BEIR (Python requests)
+# REQUESTS_CA_BUNDLE est déjà défini ci-dessus.
+
+# Si IT fournit une CA dédiée à la place :
+# export SSL_CERT_FILE=~/enterprise-ca.pem
+# export REQUESTS_CA_BUNDLE=~/enterprise-ca.pem

@@ -33,22 +33,12 @@ Then, install uv following the documentation at the following link:
 
 ```bash
 # Linux
-uv python install 3.11 --system-certs
+uv python install 3.11
 ```
 
 See section [Python versions](#Python versions) for more details on other
 supported versions of Python.
 
-
-#### Use system certificates
-
-By default, uv uses bundled Mozilla root certificates.
-If you need to use your own system certificates, open or create a uv.toml file under ~/.config/uv/ and add the following line :
-
-```bash
-#Linux
-system-certs = true
-````
 
 #### Install and deploy T-Keir documentation
 ```bash
